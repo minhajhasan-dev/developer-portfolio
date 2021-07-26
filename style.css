@@ -5,14 +5,14 @@ body {
 .orange-color {
   color: orange;
 }
-section {
+.flexible-container {
   display: flex;
   margin-bottom: 100px;
 }
 .half-width {
   width: 50%;
   /* padding: 50px 5%; */
-  padding: 100px 6% 0;
+  padding: 100px 5% 0 5%;
 }
 .half-width img {
   width: 85%;
@@ -33,4 +33,23 @@ section {
   background-image: url(images/dream-bg.png);
   background-repeat: no-repeat;
   background-position: right;
+}
+.experience-area {
+  padding: 100px 5% 0 5%;
+  background-image: url(images/exp-bg.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.experience-area h1 {
+  text-align: center;
+}
+.experience-item {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
 }
