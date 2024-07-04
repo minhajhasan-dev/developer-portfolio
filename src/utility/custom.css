@@ -21,3 +21,43 @@
   color: rgb(96 165 250 / var(--tw-text-opacity));
   transition: color 0.3s;
 }
+
+.glowable-text {
+  color: #2c8bff;
+}
+
+[glow] .glowable-text {
+  color: var(--glow-color);
+}
+
+/* custom rainbow effect */
+@keyframes rainbow-glow {
+  0% {
+    box-shadow: 0 0 5px #ff0000;
+  }
+  14% {
+    box-shadow: 0 0 5px #ff7f00;
+  }
+  28% {
+    box-shadow: 0 0 5px #ffff00;
+  }
+  42% {
+    box-shadow: 0 0 5px #00ff00;
+  }
+  57% {
+    box-shadow: 0 0 5px #0000ff;
+  }
+  71% {
+    box-shadow: 0 0 5px #4b0082;
+  }
+  85% {
+    box-shadow: 0 0 5px #9400d3;
+  }
+  100% {
+    box-shadow: 0 0 5px #ff0000;
+  }
+}
+
+.button-glow:hover {
+  animation: rainbow-glow 2s infinite linear;
+}

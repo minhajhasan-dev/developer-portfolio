@@ -35,6 +35,19 @@ const Navbar = () => {
           About Me{" "}
         </NavLink>{" "}
         <NavLink
+          to={"/skills"}
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "nav-link-active"
+              : "nav-link-inactive"
+          }
+        >
+          {" "}
+          Skills{" "}
+        </NavLink>{" "}
+        <NavLink
           to={"/projects"}
           className={({ isActive, isPending }) =>
             isPending
