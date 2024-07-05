@@ -21,7 +21,20 @@ const AboutMe = () => {
           <div className="mt-3 md:flex gap-2 items-center md:max-w-5xl ">
             <div className="flex-1 space-y-5">
               <div>
-                <FaLayerGroup className="text-xl"/>
+                <FaLayerGroup className="text-xl" />
+                <h3 className="text-lg ">
+                  {" "}
+                  <span className="font-semibold">Introduction:</span> I'm a
+                  skilled frontend developer specializing in the MERN stack.
+                  Proficient in HTML, CSS, Tailwind CSS, JavaScript, and React,
+                  I create dynamic, responsive web applications. With a solid
+                  foundation in Node.js, Express.js, MongoDB, and Firebase, I
+                  seamlessly integrate robust backend systems. Let's collaborate
+                  to turn your ideas into impactful web applications!
+                </h3>
+              </div>
+              <div>
+                <FaLayerGroup className="text-xl" />
                 <h3 className="text-lg ">
                   {" "}
                   <span className="font-semibold">
@@ -32,7 +45,7 @@ const AboutMe = () => {
                 </h3>
               </div>
               <div>
-                <FaLayerGroup className="text-xl"/>
+                <FaLayerGroup className="text-xl" />
                 <h3 className="text-lg ">
                   {" "}
                   <span className="font-semibold">
@@ -42,7 +55,7 @@ const AboutMe = () => {
                 </h3>
               </div>
               <div>
-                <FaLayerGroup className="text-xl"/>
+                <FaLayerGroup className="text-xl" />
                 <h3 className="text-lg ">
                   {" "}
                   <span className="font-semibold">
@@ -53,7 +66,7 @@ const AboutMe = () => {
                 </h3>
               </div>
               <div>
-                <FaLayerGroup className="text-xl"/>
+                <FaLayerGroup className="text-xl" />
                 <h3 className="text-lg ">
                   {" "}
                   <span className="font-semibold">Love working in team.</span> I

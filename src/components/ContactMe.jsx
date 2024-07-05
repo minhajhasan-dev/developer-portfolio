@@ -1,17 +1,65 @@
-import toast from "react-hot-toast";
+import { useState } from "react";
 
 const ContactMe = () => {
-  const handleContact = () => {
+  const [userData, setUserData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleModal = () => {
     document.getElementById("my_modal_5").showModal();
-    toast.success("Contacting...");
   };
+
+  // const handleContact = async (e) => {
+  //   e.preventDefault();
+  //   const { name, email, message } = userData;
+  //   const res = await fetch(
+  //     "https://developer-portfolio-minhaj-default-rtdb.firebaseio.com/clientContactRecords.json",
+  //     {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //         name,
+  //         email,
+  //         message,
+  //       }),
+  //     }
+  //   );
+  //   document.getElementById("my_modal_5").close();
+  //   if (res) {
+  //     // Clearing the form after successful submission
+  //     setUserData({
+  //       name: "",
+  //       email: "",
+  //       message: "",
+  //     });
+  //     // Showing message after 1.250s
+  //     setTimeout(() => {
+  //       toast.success("Message Sent Successfully");
+  //     }, 1250);
+  //   } else {
+  //     setTimeout(() => {
+  //       toast.error("Failed to send message");
+  //     }, 1250);
+  //   }
+  // };
   const closeModal = () => {
     document.getElementById("my_modal_5").close();
   };
+  let name, value;
+  const postUserData = (e) => {
+    name = e.target.name;
+    value = e.target.value;
+    setUserData({ ...userData, [name]: value });
+  };
+
   return (
     <div>
       <button
-        onClick={handleContact}
+        onClick={handleModal}
         className="btn button-glow btn-outline hover:border-none hover:bg-blue-500 btn-sm rounded-3xl"
       >
         Contact Me
@@ -20,9 +68,11 @@ const ContactMe = () => {
       <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
         <div className="modal-box">
           <h3 className="font-bold text-center text-lg">Contact Me</h3>
-          <form method="POST" action="/submit-form-endpoint">
+          <form
+            method="POST"
+            action="https://formsubmit.co/349424b3fe6dc850d83efe4d81c901a4"
+          >
             {" "}
-            {/* Update action with your endpoint */}
             <div className="mb-4">
               <label
                 htmlFor="name"
@@ -34,7 +84,10 @@ const ContactMe = () => {
                 type="text"
                 id="name"
                 name="name"
+                placeholder="Your Name"
                 required
+                value={userData.name}
+                onChange={postUserData}
                 className="mt-1 p-2 w-full border shadow-sm rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
@@ -49,7 +102,10 @@ const ContactMe = () => {
                 type="email"
                 id="email"
                 name="email"
+                placeholder="Your Email"
                 required
+                value={userData.email}
+                onChange={postUserData}
                 className="mt-1 p-2 w-full border shadow-sm rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
@@ -64,7 +120,10 @@ const ContactMe = () => {
                 id="message"
                 name="message"
                 rows="4"
+                placeholder="Your Message"
                 required
+                value={userData.message}
+                onChange={postUserData}
                 className="mt-1 p-2 w-full border shadow-sm rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               ></textarea>
             </div>

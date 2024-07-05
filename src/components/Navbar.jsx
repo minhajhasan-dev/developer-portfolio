@@ -1,3 +1,4 @@
+import { Glow } from "@codaworks/react-glow";
 import { NavLink } from "react-router-dom";
 import "../utility/custom.css";
 import ContactMe from "./ContactMe";
@@ -61,19 +62,6 @@ const Navbar = () => {
           {" "}
           Projects{" "}
         </NavLink>{" "}
-        {/* <NavLink
-          to={"/contact"}
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "nav-link-active"
-              : "nav-link-inactive"
-          }
-        >
-          {" "}
-          Contact{" "}
-        </NavLink>{" "} */}
       </div>{" "}
     </>,
   ];
@@ -110,10 +98,15 @@ const Navbar = () => {
             {Links}{" "}
           </ul>{" "}
         </div>{" "}
-        <NavLink className="text-xl" to="/">
-          {" "}
-          Minhajul Hasan{" "}
-        </NavLink>{" "}
+        <Glow color="hsl(338.69 100% 48.04%)">
+          <NavLink
+            className="text-2xl glowable-text font-mono font-semibold"
+            to="/"
+          >
+            {" "}
+            Minhajul Hasan{" "}
+          </NavLink>{" "}
+        </Glow>{" "}
       </div>{" "}
       <div className="navbar-center hidden lg:flex">
         {" "}
