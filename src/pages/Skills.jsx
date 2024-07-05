@@ -12,18 +12,18 @@ const Skills = () => {
         <div className="space-y-5">
           <div className="space-y-3 flex flex-col items-center">
             <div className=" glowable-text">
-              <h1 className="md:text-5xl  font-semibold">
+              <h1 className="md:text-5xl text-3xl  font-semibold">
                 My &#123; Development &#125; Skills
               </h1>
             </div>
 
-            <h3 className="text-base font-semibold text-center">
+            <h3 className="md:text-base text-xs font-semibold text-center">
               As a MERN stack developer, I have gained the following skills.
             </h3>
           </div>{" "}
         </div>
         {/* skills grid here */}
-        <div className="pt-16 gap-10 grid md:grid-cols-4 grid-cols-2 lg:max-w-5xl max-w-3xl mx-auto">
+        <div className="pt-16 gap-10 p-5 grid md:grid-cols-4 grid-cols-1 lg:max-w-5xl max-w-3xl mx-auto">
           <div className="flex flex-col space-y-2">
             <BiLogoJavascript className="size-14" />
 

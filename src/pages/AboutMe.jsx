@@ -29,10 +29,10 @@ const AboutMe = () => {
                 alt="Minhajul Hasan"
               />
             </div>
-            <div className="flex-1 space-y-5 lg:order-1">
+            <div className="flex-1  space-y-5 lg:order-1">
               <div>
                 <FaLayerGroup className="text-xl" />
-                <h3 className="text-lg ">
+                <h3 className="md:text-lg ">
                   {" "}
                   <span className="font-semibold">Introduction:</span> I'm a
                   skilled frontend developer specializing in the MERN stack.
@@ -45,7 +45,7 @@ const AboutMe = () => {
               </div>
               <div>
                 <FaLayerGroup className="text-xl" />
-                <h3 className="text-lg ">
+                <h3 className="md:text-lg  ">
                   {" "}
                   <span className="font-semibold">
                     Diploma in Engineering.
@@ -56,7 +56,7 @@ const AboutMe = () => {
               </div>
               <div>
                 <FaLayerGroup className="text-xl" />
-                <h3 className="text-lg ">
+                <h3 className="md:text-lg  ">
                   {" "}
                   <span className="font-semibold">
                     Complete Web Development Course.
@@ -66,7 +66,7 @@ const AboutMe = () => {
               </div>
               <div>
                 <FaLayerGroup className="text-xl" />
-                <h3 className="text-lg ">
+                <h3 className="md:text-lg  ">
                   {" "}
                   <span className="font-semibold">
                     Specializing in MERN Stack.
@@ -77,7 +77,7 @@ const AboutMe = () => {
               </div>
               <div>
                 <FaLayerGroup className="text-xl" />
-                <h3 className="text-lg ">
+                <h3 className="md:text-lg  ">
                   {" "}
                   <span className="font-semibold">Love working in team.</span> I
                   enjoy working in a team environment, but I can also work

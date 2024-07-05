@@ -19,7 +19,7 @@ const Projects = () => {
           </div>{" "}
         </div>
         {/* Project Showcase Here */}
-        <div>
+        <div className="flex justify-center my-5">
           <MyProjects/>
         </div>
       </Glow>
