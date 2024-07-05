@@ -100,7 +100,7 @@ const Navbar = () => {
         </div>{" "}
         <Glow color="hsl(338.69 100% 48.04%)">
           <NavLink
-            className="text-2xl glowable-text font-mono font-semibold"
+            className="md:text-2xl text-lg  glowable-text font-mono font-semibold"
             to="/"
           >
             {" "}

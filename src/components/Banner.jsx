@@ -12,16 +12,16 @@ const Banner = () => {
         <div className="space-y-5">
           <div className="space-y-3  flex flex-col items-center">
             <div>
-              <h1 className="md:text-7xl glowable-text font-semibold">
+              <h1 className="lg:text-7xl md:text-5xl text-3xl pt-3 md:pt-0 glowable-text font-semibold">
                 Frontend Developer
               </h1>
             </div>
 
-            <h3 className="text-2xl font-semibold text-center">
+            <h3 className="md:text-2xl text-xs font-semibold text-center">
               {" "}
               &#123; JavaScript, React, MongoDB, Express, Tailwind CSS &#125;{" "}
             </h3>
-            <p className="max-w-md text-lg text-center">
+            <p className="max-w-md p-4 md:p-0 md:text-lg text-center">
               Specializing in MERN Stack I leverage cutting-edge technologies to
               bring web projects to life.
             </p>
@@ -45,7 +45,11 @@ const Banner = () => {
             </a>
           </div>
           <div className="flex  justify-center pt-5">
-            <img width={350} src="./3d-programmer.png" alt="programmer" />
+            <img
+              className="w-40 md:w-80"
+              src="./3d-programmer.png"
+              alt="programmer"
+            />
           </div>
         </div>
       </Glow>
