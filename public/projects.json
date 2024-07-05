@@ -1,0 +1,26 @@
+[
+  {
+    "image": "https://i.postimg.cc/SNtSpXNz/med-camp-connect-3.png",
+    "technologies_used": ["React", "Node", "MongoDB", "Express"],
+    "project_name": "MedCampConnect",
+    "description": "MedCamp Connect is a comprehensive platform built with React and Vite, designed to connect medical camps with volunteers and participants. The platform provides an intuitive interface for camp organizers to list their camps, and for participants to join the camps.",
+    "github_link": "https://github.com/minhajhasan-dev/medCampConnect",
+    "live_link": "https://medcampconnect-5fdc3.web.app/"
+  },
+  {
+    "image": "https://i.ibb.co/py52cfb/share-dine.png",
+    "technologies_used": ["React", "Node", "Express", "MongoDB"],
+    "project_name": "Share Dine",
+    "description": "Welcome to Share Dine! ShareDine connects you with neighbors to share delicious food and fight food waste.",
+    "github_link": "https://github.com/minhajhasan-dev/share-dine-client",
+    "live_link": "https://share-dine-client.web.app"
+  },
+  {
+    "image": "https://i.ibb.co/B2ncnLT/nomad-ventures.png",
+    "technologies_used": ["React", "Node", "Express", "MongoDB"],
+    "project_name": "Nomad Ventures",
+    "description": "Nomad Ventures is a travel blog website built with React and Tailwind. The website is designed to showcase travel stories and experiences of the author.",
+    "github_link": "https://github.com/minhajhasan-dev/nomad-ventures-client",
+    "live_link": "https://nomad-ventures-3ad90.web.app/"
+  }
+]

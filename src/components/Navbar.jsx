@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "../utility/custom.css";
+import ContactMe from "./ContactMe";
 import ThemeController from "./ThemeController";
 
 const Navbar = () => {
@@ -60,7 +61,7 @@ const Navbar = () => {
           {" "}
           Projects{" "}
         </NavLink>{" "}
-        <NavLink
+        {/* <NavLink
           to={"/contact"}
           className={({ isActive, isPending }) =>
             isPending
@@ -72,7 +73,7 @@ const Navbar = () => {
         >
           {" "}
           Contact{" "}
-        </NavLink>{" "}
+        </NavLink>{" "} */}
       </div>{" "}
     </>,
   ];
@@ -118,9 +119,10 @@ const Navbar = () => {
         {" "}
         <ul className="menu menu-horizontal px-1">{Links}</ul>{" "}
       </div>{" "}
-      <div className="navbar-end">
+      <div className="navbar-end flex gap-4">
         {" "}
-        <ThemeController />{" "}
+        {/* contact me component here */}
+        <ContactMe /> <ThemeController />{" "}
       </div>{" "}
     </div>
   );
