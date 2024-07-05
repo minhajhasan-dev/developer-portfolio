@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
+import MyLoader from "./MyLoader";
 
 const MyProjects = () => {
   const [projects, setProjects] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     fetch("/projects.json")
       .then((res) => res.json())
       .then((data) => {
         setProjects(data);
+        setTimeout(() => setIsLoading(false), 2000);
       });
   }, []);
   console.log(projects);
@@ -14,7 +17,10 @@ const MyProjects = () => {
     <div className="mt-8 grid gap-10 md:grid-cols-3 grid-cols-1">
       {projects.map((project, index) => (
         <div key={index} className="space-y-3">
-          <div className="card bg-base-100 w-80 shadow-xl">
+          {isLoading ? (
+            <MyLoader />
+          ): (
+            <div className="card bg-base-100 w-80 shadow-xl">
             <figure className="px-3">
               <img
                 className="rounded-t-lg"
@@ -57,6 +63,7 @@ const MyProjects = () => {
               </div>
             </div>
           </div>
+          )}
         </div>
       ))}
     </div>
