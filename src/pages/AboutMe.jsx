@@ -16,7 +16,7 @@ const AboutMe = () => {
               </h1>
             </div>
 
-            <h3 className="md:text-base text-xs font-semibold text-center">
+            <h3 className="md:text-base text-sm font-semibold text-center">
               Frontend Developer with over 1 year of experience
             </h3>
           </div>{" "}

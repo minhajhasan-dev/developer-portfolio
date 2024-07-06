@@ -17,7 +17,7 @@ const Skills = () => {
               </h1>
             </div>
 
-            <h3 className="md:text-base text-xs font-semibold text-center">
+            <h3 className="md:text-base text-sm font-semibold text-center">
               As a MERN stack developer, I have gained the following skills.
             </h3>
           </div>{" "}

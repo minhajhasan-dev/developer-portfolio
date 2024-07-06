@@ -17,7 +17,7 @@ const Banner = () => {
               </h1>
             </div>
 
-            <h3 className="md:text-2xl text-xs font-semibold text-center">
+            <h3 className="md:text-2xl text-sm font-semibold text-center">
               {" "}
               &#123; JavaScript, React, MongoDB, Express, Tailwind CSS &#125;{" "}
             </h3>

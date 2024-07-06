@@ -8,12 +8,12 @@ const Projects = () => {
         <div className="space-y-5">
           <div className="space-y-3 flex flex-col items-center">
             <div className=" glowable-text">
-              <h1 className="md:text-5xl  font-semibold">
+              <h1 className="md:text-5xl text-3xl  font-semibold">
                 My &#123; Dev &#125; Projects
               </h1>
             </div>
 
-            <h3 className="text-base font-semibold text-center">
+            <h3 className="md:text-base text-sm font-semibold text-center">
               Here are some of the projects I have worked on.{" "}
             </h3>
           </div>{" "}
