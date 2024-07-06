@@ -9,7 +9,7 @@ const MyProjects = () => {
       .then((res) => res.json())
       .then((data) => {
         setProjects(data);
-        setTimeout(() => setIsLoading(false), 2000);
+        setTimeout(() => setIsLoading(false), 1000);
       });
   }, []);
   console.log(projects);
