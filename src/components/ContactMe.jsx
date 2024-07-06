@@ -62,7 +62,7 @@ const ContactMe = () => {
         onClick={handleModal}
         className="btn button-glow btn-outline hover:border-none hover:bg-blue-500 btn-sm rounded-3xl"
       >
-        Contact Me
+        Contact
       </button>
 
       <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
