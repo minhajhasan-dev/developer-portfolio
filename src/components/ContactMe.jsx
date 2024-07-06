@@ -68,6 +68,12 @@ const ContactMe = () => {
       <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
         <div className="modal-box">
           <h3 className="font-bold text-center text-lg">Contact Me</h3>
+          <div className="flex justify-center py-2 items-center">
+            {" "}
+            <p className="text-sm rainbow-flow  sm:hidden">
+              Reach out to me on social media anytime!
+            </p>{" "}
+          </div>
           <form
             method="POST"
             action="https://formsubmit.co/349424b3fe6dc850d83efe4d81c901a4"
@@ -131,7 +137,7 @@ const ContactMe = () => {
               {" "}
               <div className="flex justify-center  items-center">
                 {" "}
-                <p className="text-sm rainbow-flow">
+                <p className="text-sm rainbow-flow hidden sm:block">
                   Reach out to me on social media anytime!
                 </p>{" "}
               </div>
