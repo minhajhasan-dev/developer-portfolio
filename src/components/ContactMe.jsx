@@ -127,21 +127,30 @@ const ContactMe = () => {
                 className="mt-1 p-2 w-full border shadow-sm rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               ></textarea>
             </div>
-            <div className="modal-action w-full flex justify-">
-              <button
-                type="submit"
-                className="btn btn-primary btn-sm px-6 button-glow"
-              >
-                Send
-              </button>
-              <button
-                onClick={closeModal}
-                type="button"
-                className="btn btn- btn-sm px-6 btn-warning hover:btn-error"
-                formMethod="dialog"
-              >
-                Close
-              </button>
+            <div className="modal-action w-full flex justify-between">
+              {" "}
+              <div className="flex justify-center  items-center">
+                {" "}
+                <p className="text-sm rainbow-flow">
+                  Reach out to me on social media anytime!
+                </p>{" "}
+              </div>
+              <div className="flex gap-2">
+                <button
+                  type="submit"
+                  className="btn btn-primary btn-sm px-6 button-glow"
+                >
+                  Send
+                </button>
+                <button
+                  onClick={closeModal}
+                  type="button"
+                  className="btn btn- btn-sm px-6 btn-warning hover:btn-error"
+                  formMethod="dialog"
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </form>
         </div>
