@@ -33,7 +33,7 @@ const Banner = () => {
               </button>
             </Link>
             <a
-              href="https://drive.usercontent.google.com/u/0/uc?id=1EQiME0vRnAkntA5uwef0CpRkUNHdrAaG&export=download"
+              href="https://drive.usercontent.google.com/download?id=1UDaBDGCYu0zFT2ardCiJKqpSkj1fb39g&export=download"
               download={"Resume.pdf"}
             >
               <button
