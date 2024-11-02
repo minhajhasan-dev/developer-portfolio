@@ -33,14 +33,14 @@ const Banner = () => {
               </button>
             </Link>
             <a
-              href="https://drive.usercontent.google.com/download?id=1UDaBDGCYu0zFT2ardCiJKqpSkj1fb39g&export=download"
+              href="https://drive.usercontent.google.com/download?id=1GLb33j1M7sOtm68VyYpGnHdzQQRFrpQJ&export=download"
               download={"Resume.pdf"}
             >
               <button
                 onClick={handleDownload}
                 className="border-b-2 border-primary text-sm text-primary "
               >
-                Download CV
+                Download Resume
               </button>
             </a>
           </div>

@@ -1,5 +1,13 @@
 [
   {
+    "image": "https://i.ibb.co.com/PmRGrZj/smartmockups-m30mc2j9.png",
+    "technologies_used": ["React", "Node", "Express", "MongoDB"],
+    "project_name": "Meet Up",
+    "description": "MeetUp is a video conferencing app designed to make collaboration and connection easier, no matter where you are.",
+    "github_link": "https://github.com/takbirgazi/meetup-client",
+    "live_link": "https://meetup-d48c4.web.app/"
+  },
+  {
     "image": "https://i.postimg.cc/SNtSpXNz/med-camp-connect-3.png",
     "technologies_used": ["React", "Node", "MongoDB", "Express"],
     "project_name": "MedCampConnect",

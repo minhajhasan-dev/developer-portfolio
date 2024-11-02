@@ -12,7 +12,7 @@ const MyProjects = () => {
         setTimeout(() => setIsLoading(false), 1000);
       });
   }, []);
-  console.log(projects);
+
   return (
     <div className="mt-8 grid gap-10 lg:grid-cols-3 md:grid-cols-2  grid-cols-1">
       {projects.map((project, index) => (
